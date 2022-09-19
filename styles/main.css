@@ -25,9 +25,14 @@ h1 {
 }
 
 p,
-h2 {
+h2,
+a {
   font-family: var(--default-font-family);
   font-weight: normal;
+}
+
+h3 {
+  font-size: 64px;
 }
 
 .hero {
@@ -49,12 +54,67 @@ h2 {
 .btn-branding {
   background: var(--secondary-color);
   color: white;
-  padding: 18px 30px;
-  font-family: var(--default-font-family);
+  padding: 18px 40px;
 }
 
 .btn-branding:hover {
   text-decoration: none;
   color: white;
   background: var(--secondary-color);
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+.project-description p {
+  opacity: 0.7;
+  line-height: 30px;
+}
+
+.btn-branding-outline {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 18px 40px;
+}
+
+.btn-branding-outline:hover {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+@media (max-width: 990px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero p {
+    margin-bottom: 0;
+  }
+  .hero h2 {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .project-description {
+    text-align: center;
+    padding: 0;
+  }
+
+  .project-description p {
+    line-height: 1.5;
+  }
+}
+
+@media (width < 1200px) {
+  .project-description {
+    padding: 0;
+  }
 }
