@@ -81,6 +81,7 @@ h3 {
 .btn-branding-outline:hover {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 @media (max-width: 990px) {
