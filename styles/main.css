@@ -145,10 +145,12 @@ h3 {
     line-height: 1.5;
   }
 
+  /*sub pages*/
   .sub-hero {
     margin-top: 50px;
     padding: 30px;
   }
+
   .sub-hero-content {
     text-align: center;
   }
@@ -156,6 +158,11 @@ h3 {
   .sub-hero img {
     display: block;
     margin: 0 auto;
+  }
+
+  /*contact page*/
+  .links {
+    text-align: center;
   }
 }
 
