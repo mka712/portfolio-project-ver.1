@@ -59,8 +59,9 @@ h3 {
 
 .btn-branding:hover {
   text-decoration: none;
-  color: white;
+  color: black;
   background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 .project-description {
@@ -84,9 +85,28 @@ h3 {
   text-decoration: underline;
 }
 
+.about-hero {
+  padding: 150px;
+}
+
+.about-hero h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-hero h2 {
+  font-size: 18px;
+}
+
+.about-hero p {
+  opacity: 0.7;
+}
+
 @media (max-width: 990px) {
-  h1 {
+  h1,
+  .about-hero h1 {
     font-size: 45px;
+    line-height: 1.2;
   }
 
   h3 {
@@ -111,6 +131,19 @@ h3 {
 
   .project-description p {
     line-height: 1.5;
+  }
+
+  .about-hero {
+    margin-top: 30px;
+    padding: 30px;
+  }
+  .about-hero-content {
+    text-align: center;
+  }
+
+  .about-hero img {
+    display: block;
+    margin: 0 auto;
   }
 }
 
